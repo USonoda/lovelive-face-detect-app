@@ -6,4 +6,4 @@ test/
 train/
 validation/
 results_all/
-/fine_tuning/dataset/culc.py
+/fine_tuning/dataset/culc
