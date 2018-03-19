@@ -1,0 +1,8 @@
+/.idea/
+/venv/
+.DS_Store
+candidate/
+test/
+train/
+validation/
+results_all/

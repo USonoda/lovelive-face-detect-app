@@ -1,0 +1,13 @@
+Flask==0.12.2
+gunicorn==19.7.1
+h5py==2.7.0
+Jinja2==2.9.6
+Keras==2.1.4
+opencv-python==3.4.0.12
+numpy==1.14.0
+Pillow==5.0.0
+requirements==0.1
+tensorflow==1.5.0
+urllib3==1.22
+Werkzeug==0.12.2
+

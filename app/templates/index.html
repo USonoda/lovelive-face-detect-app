@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block content %}
+  <!-- Form
+  ================================================== -->
+<div class="form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p style="margin-left:15px;">
+          画像から顔を認識、判定します。
+        </p>
+        {% if result %}
+          <div>
+              <img src={{result[1]}} class="detect_img">
+          </div>
+          <!--顔の数に応じて表の有無を変える仕様にしたい-->
+          {% if result[2] == 0 %}
+            <p style="margin-left:10px;">
+            顔が認識されませんでした（75×75pt未満の顔は認識されません）
+            </p>
+          {% endif %}
+
+        {% else %}
+          <div class="col-md-12">
+            <h3>画像をアップロードしてください</h3>
+          </div>
+        {% endif %}
+        <div class="col-md-12" style="margin-top:10px; margin-bottom:20px;">
+          <form action="/post" method="post" class="form-inline" enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <button type="submit" class="btn btn-primary" style="margin-top:5px;">判定する</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
