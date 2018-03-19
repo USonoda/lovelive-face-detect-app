@@ -6,3 +6,4 @@ test/
 train/
 validation/
 results_all/
+culc.py
